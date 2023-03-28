@@ -25,7 +25,7 @@ export default function Home() {
         if (message === '' && !loading) return
         setLoading(true)
 
-        const lastConversation = messages[messages.length - 1]
+        const lastConversation: any = messages[messages.length - 1]
 
         fetch('/api/chat', {
             method: 'POST',
